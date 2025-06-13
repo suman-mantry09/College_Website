@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LNCT Group Links</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- TailwindCSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-yellow-200 via-pink-200 to-purple-200 min-h-screen py-10 px-4">
+
+  <h1 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-10 drop-shadow-lg">
+    LNCT Group Companies & Institutions
+  </h1>
+
+  <div id="linkContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto"></div>
+
+  <script>
+    const links = [
+      "https://lnctbhopal.ac.in",
+      "https://lnct.ac.in",
+      "https://lnctvu.ac.in",
+      "https://jnctpu.edu.in",
+      "https://jayantjaggery.com",
+      "https://indorelnmc.com",
+      "https://ananjay.co.in",
+      "https://jncn.ac.in",
+      "https://lnctworldschools.com",
+      "https://cecbilaspur.ac.in",
+      "https://lncpbhopal.in",
+      "https://lncps.in",
+      "https://lnctbhopa1.in",
+      "https://lnctuj.com",
+      "https://lncte.in",
+      "https://lncts.in",
+      "https://lnctbpindorecampus.in",
+      "https://kalchuricontractors.ltd",
+      "https://lnctrishiraj.ac.in",
+      "https://parvatisweetners.co.in",
+      "https://lnctsopindore.in",
+      "https://lnctmca.in",
+      "https://ananjaypharma.co.in",
+      "https://vitamax.co.in",
+      "https://dlchomeopathy.in",
+      "https://dabraalcobrew.com",
+      "https://lnctguru.com",
+      "https://ipsbilaspur.com",
+      "https://lnctu.ac.in",
+      "https://lnayurvedcollege.com"
+    ];
+
+    const container = document.getElementById("linkContainer");
+
+    links.forEach(link => {
+      const card = document.createElement("div");
+      card.className = `
+        bg-white rounded-xl shadow-md hover:shadow-2xl transform hover:-translate-y-1
+        transition-all duration-300 p-4 text-center border border-gray-200 break-words
+      `;
+      card.innerHTML = `
+        <a href="${link}" target="_blank" class="text-blue-600 font-medium hover:underline break-words">
+          ${link}
+        </a>
+      `;
+      container.appendChild(card);
+    });
+  </script>
+
+  <!-- Additional responsive tweaks -->
+  <style>
+    @media (max-width: 640px) {
+      /* Adjust padding and text size on very small screens */
+      body {
+        padding: 10px;
+      }
+      h1 {
+        font-size: 1.5rem; /* Smaller heading for small devices */
+      }
+      .text-blue-600 {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</body>
+</html>
+
